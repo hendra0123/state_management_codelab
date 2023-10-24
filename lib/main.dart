@@ -5,6 +5,8 @@ void main() {
   // runApp(MyStatelessApp());
 }
 
+int counter = 0;
+
 class MyStatelessApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,8 @@ class CounterWidget extends StatelessWidget {
           SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
+              counter++;
+              print(counter);
               // TODO: Increment counter
             },
             child: Text('Increment'),
